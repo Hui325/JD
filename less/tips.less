@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.jd_tips {
+  height: 34px;
+  border-top: 1px solid @borderColor;
+  border-bottom: 1px solid @borderColor;
+  text-align: center;
+  line-height: 32px;
+  background-color: #fff;
+
+  p {
+    display: inline-block;
+    padding-left: 30px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 7px;
+      top: 6px;
+      width: 18px;
+      height: 18px;
+      background: url("../images/safe_icon.png") no-repeat;
+      background-size: 18px 18px;
+    }
+  }
+}

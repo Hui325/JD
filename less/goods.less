@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+// 选择框
+.jd_checkbox {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  // 未选中的状态
+  background-position: -180px -90px;
+
+  &.checked {
+    background-position: -180px -70px;
+  }
+}
+
+
+.goods_title {
+  height: 34px;
+  margin-top: 10px;
+  border-top: 1px solid @borderColor;
+  border-bottom: 1px solid @borderColor;
+  padding-left: 34px;
+  position: relative;
+  background-color: #fff;
+
+
+  .fl {
+    position: relative;
+    padding-left: 20px;
+    line-height: 32px;
+
+    i {
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      left: 0;
+      top: 11px;
+      background-position: 0 0;
+      background-size: 150px 150px;
+    }
+
+  }
+
+  .fr {
+    line-height: 32px;
+  }
+}
+
+.goods_wrapper {
+
+
+  .goods_content {
+    height: 100px;
+    padding-left: 34px;
+    border-bottom: 1px solid @borderColor;
+    position: relative;
+    background-color: #fff;
+
+    // 左侧
+    .goods_img {
+      float: left;
+      width: 80px;
+      height: 100%;
+      padding-top: 10px;
+    }
+
+    // 右侧
+    .goods_info {
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+
+      p {
+        padding: 0 10px;
+      }
+
+      .info_bottom {
+        height: 34px;
+        width: 100%;
+        padding: 0 10px;
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+
+        .number_box {
+          width: 120px;
+          height: 34px;
+          border: 1px solid @borderColor;
+          float: left;
+          text-align: center;
+
+          > div {
+            width: 33.3%;
+            height: 100%;
+            line-height: 32px;
+            float: left;
+
+            input {
+              width: 100%;
+              height: 100%;
+              display: block;
+              text-align: center;
+              border-left: 1px solid @borderColor;
+              border-right: 1px solid @borderColor;
+            }
+          }
+        }
+
+        .delete_box {
+          width: 20px;
+          height: 22px;
+          float: right;
+
+          .delete_up {
+            width: 18px;
+            height: 4px;
+            background: url("../images/delete_up.png") no-repeat;
+            background-size: 18px 4px;
+            // 只适用于微调位置
+            position: relative;
+            top: 1px;
+          }
+
+          .delete_down {
+            width: 18px;
+            height: 18px;
+            background: url("../images/delete_down.png") no-repeat;
+            background-size: 18px 18px;
+          }
+        }
+      }
+    }
+  }
+
+}

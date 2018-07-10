@@ -1,0 +1,123 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.jd_conatiner {
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 44px;
+}
+
+.jd_header {
+  height: 44px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0 44px;
+  /* linear-gradient(方向, 颜色 范围, 颜色 范围)*/
+  background: linear-gradient(to bottom, white, #ccc);
+}
+.jd_header .icon_left,
+.jd_header .icon_right {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  padding: 12px;
+  /* 让图片从内容的左顶点开始显示 */
+  background-origin: content-box;
+  /* background-clip 背景裁剪, 用于设置背景图片的显示范围, 在内容部分显示即可*/
+  background-clip: content-box;
+}
+.jd_header .icon_left {
+  left: 0px;
+  background-position: -20px 0;
+}
+.jd_header .icon_right {
+  right: 0px;
+  background-position: -60px 0;
+}
+
+.jd_header .search {
+  width: 100%;
+  height: 44px;
+  padding-top: 7px;
+}
+.jd_header .search input {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+
+.jd_content {
+  width: 100%;
+  height: 100%;
+}
+.jd_content_left {
+  width: 90px;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+.jd_content_left li a {
+  width: 90px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  background-color: pink;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+  color: #000;
+}
+.jd_content_left li a.current {
+  background-color: #F7F7F7;
+  border-right: none;
+  color: red;
+}
+
+
+
+.jd_content_right {
+  height: 100%;
+  /* 不与浮动的元素重叠 */
+  overflow: hidden;
+  background-color: #F7F7F7;
+}
+.jd_content_right .wrapper {
+  width: 100%;
+}
+.jd_content_right .img_box {
+  padding: 10px;
+}
+.jd_content_right .menu_box {
+  padding: 10px;
+}
+.jd_content_right .menu_box h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.jd_content_right .menu_box li {
+  width: 33.3%;
+  float: left;
+}
+.jd_content_right .menu_box li a {
+  display: block;
+}
+.jd_content_right .menu_box li img {
+  width: 60px;
+  height: 60px;
+  margin: 5px auto;
+}
+.jd_content_right .menu_box li p {
+  text-align: center;
+}
